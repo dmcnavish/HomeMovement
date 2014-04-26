@@ -1,0 +1,18 @@
+
+CREATE TABLE security (
+	id int not null auto_increment primary key,
+	camera int(11),
+	filename varchar(60),
+	frame int(11),
+	file_type int(11),
+	utc_create_date datetime,
+	text_event datetime,
+	x int(11),
+	y int(11)
+)
+
+INSERT INTO security (camera, filename, frame, file_type, utc_create_date, text_event, x,y) values (1,'filename','0','1',current_timestamp,current_timestamp,1,1)
+
+
+SELECT utc_create_date, x, y  FROM security
+WHERE utc_create_date between UTC_TIMESTAMP - INTERVAL 10 MINUTE and UTC_TIMESTAMP
