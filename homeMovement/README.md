@@ -1,4 +1,4 @@
-This is your new Play application
+Home Movement
 =====================================
 
-This file will be packaged with your application, when using `play dist`.
+Home movement displays data collected from a corresponding Raspberry Pi running a security camera.
